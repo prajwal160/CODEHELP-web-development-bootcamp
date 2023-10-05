@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+#wrapper{
+    height:100vh;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+
+.container{
+    height: 100%;
+    max-width:1200px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+.container h1{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 0px 0px 10px red;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+
+.card{
+    width: 32%;
+    position:relative;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;   
+}
+
+.card img{
+width: 100%;
+height: 100%;
+filter: grayscale(100%);
+box-shadow: 0 0 20px #333;
+/* object-fit: cover;   */
+
+}
+
+.card:hover{
+    transform: scale(1.03);
+    filter: drop-shadow(0  0 10px black
+    );
+
+}
+
+.card:hover img{
+    filter:grayscale(0%);
+    }
+
+/* .card img:hover{
+filter:grayscale(0%);
+} */
+
+/*
+.card img:hover { filter: grayscale(0%); }:It removes the grayscale filter when hovering over the 
+img elements within .card.
+
+.card:hover img { filter: grayscale(0%); }:It removes the grayscale filter when hovering over the
+entire .card element, which includes its child img elements.
+*/
+
+
+.card figcaption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px;
+    width:100%;
+    height:20%;
+    font-size: 16px;
+    color: #fff;
+    opacity: 0;
+    border-radius: 0 0 10px 10px;
+    background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,));
+    /* background: linear-gradient(45deg, rgba(167, 27, 27, 0.5) 0%, rgb(88, 29, 199)); */
+    transition:0.3;
+
+}
+
+/* .card figcaption:hover{  here image word appeared only on hovering over the word.
+    opacity: 1;
+    transform: scale(1.03);
+}  */
+.card:hover figcaption{
+    opacity: 1;
+    transform: scale(1.03);
+}

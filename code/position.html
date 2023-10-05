@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <!-- <link rel="stylesheet" type="text/css" href="position.css"> -->
+</head>
+<body>
+    <h1 >Positions</h1>
+
+
+
+
+<!-- ---------------------------
+    position: static;      
+    position: relative;
+    position: fixed;
+    position: absolute;
+    position: sticky;
+    --------------------------------- -->
+<!-- 
+    <div class="wrapper" >
+
+<div class="box" id="relative">A</div>
+<div class="box" id="fixed">B</div>
+<div class="box" id="absolute">C</div>
+<div class="box" id="sticky">D</div>
+<div class="box" id="static">E</div>
+</div>
+
+<style>
+div{
+    display: inline-block;
+    height: 200px;
+    width: 200px;       
+    margin: 1px;
+    background-color: rgb(0, 255, 213);
+    border: 1px solid black;
+    
+}
+.wrapper{
+    width: 200vw;
+    height: 2000px;
+    background-color: yellow;
+}
+
+#relative{
+    position: relative; 
+    top:10px; 
+    left: 10px;  
+}
+/*
+#fixed{
+    position: fixed;
+}
+
+#absolute{           with respect to browser surface or nearby non-static container in that particular file
+position: absolute;
+top: 200px; 
+left: 250px;
+}
+*/
+#sticky {
+    position: sticky;
+    top: 90px;
+    left: 250px;
+}
+
+</style>
+-->
+
+------------------------------ 
+
+<!-- for rotating in z Axis no need to have the perspective to be used, but
+for scale and translate we need the perspective to work on z axis. -->
+
+
+<!--
+
+
+<div class="static"></div>
+<div class="translated"></div>
+<div class="scaled"></div>
+
+
+<style>
+
+    div{
+        height: 100px;
+        width: 100px;
+        background-color: aqua;
+        border: 1px solid black;
+        margin: 5px;
+
+    }
+.translated{
+    transform: perspective(15px) translateZ(-10px);
+}
+.scaled{
+    margin-left:200px;
+    transform: rotateZ('30deg');
+    transform:perspective(350px) scaleZ(6)  rotateX(45deg) rotateY(30deg);
+}
+
+</style>
+
+------------------------- s-->
+
+<!-- 
+
+<div class="container">
+    <div class =ring id="box1">A</div>
+    <div class =ring id="box2">B</div>
+    <div class =ring id="box3">Cfffff</div>
+    <div class =ring>D</div>
+</div>
+
+<style>
+
+
+.container{
+    height: 400px;
+    border: 2px solid black;
+    display: flex;
+/* flex-direction: column;
+    flex-direction: column-reverse;
+    flex-direction: row;
+    flex-direction: row-reverse; 
+*/
+/*column, column-reverse, row ,row-reverse */
+
+
+/*
+    flex-wrap:nowrap ;
+    flex-wrap:wrap ;
+    flex-wrap:wrap-reverse ;
+*/
+/*default value is nowrap and it will compress the box inside a container
+in wrap it does not compress the box box will shift to next line
+and in wrap reverse it will create the new line upwards and moves there */
+
+
+/*
+justify-content: flex-start;
+justify-content: flex-end;
+justify-content: center;
+justify-content: space-between;
+justify-content: space-evenly;
+*/
+
+
+/*
+align-items: flex-start;
+align-items: flex-end;
+align-items: center;
+align-items: stretch;
+align-items: baseline;
+*/
+
+
+/*
+justify-content: center;
+align-items: center;
+gap: 10px;
+*/
+
+/*
+flex-wrap:wrap ;
+justify-content: center;
+align-items: center;
+gap: 10px;
+
+
+align-content:flex-start ;
+align-content:flex-end ;
+align-content:center ;
+align-content:space-between;
+align-content:space-around ;
+align-content:space-evenly;
+*/
+
+flex-wrap:wrap ;
+justify-content: center;
+align-items: center;
+gap: 10px;
+
+
+}
+
+.ring{
+    border: 1px solid black;
+    background-color: aqua;
+   /*flex-basis: 100px; */ 
+    width: 50px;
+}
+#box1{
+order:5;
+/*flex-shrink:4;
+flex-grow:1;*/
+}
+#box2{
+order:9;
+/*flex-shrink:2;
+flex-grow:1;*/
+}
+#box3{
+order: 4;
+/*align-self: stretch;
+ */
+}
+
+
+
+/*
+ALIGN-SELF
+align-self is used for aligning the item, if self-align applied it applies only
+for the certain block where we apply NOT the entire container
+
+align-item is used in container level, if applied 
+applies for all block in that container
+*/
+</style>
+
+
+
+
+
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html> 

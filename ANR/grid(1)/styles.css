@@ -1,0 +1,38 @@
+.container{
+    height: 700px;
+    border: 1px solid black;
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
+    grid-template-rows: repeat(4,1fr); 
+    grid-gap: 10px ;
+    /* column-gap: 10px;
+    row-gap: 10px; */
+}
+.box{
+    background-color: aqua;
+    border:1px solid black;
+    /* height: 100px; */
+    /* width: 100px; */  
+}
+#box1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/*grid-area is used to define the block size from all sides.
+grid area is combination of all these 4 properties. 
+            grid-row-start:2 ;         
+            grid-row-end:7 ;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-template-areas:2/7/1/4;
+*/
+
+/*
+grid-auto-rows:minmax(100px,auto); 
+row size will be of min of 100px and max of auto(accordingly)
+we can define it in   .container{}
+*/
+
+/*(animation & responsiveness)*/
