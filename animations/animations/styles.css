@@ -16,9 +16,9 @@
     animation-iteration-count: 2;
     animation-timing-function:  ease;
     /* animation-delay: 1s; */
-    /* animation-direction: alternate; */
+/* animation-direction: alternate;   different directions the animation moves*/
     animation-fill-mode:both;
-}
+}    
 
 @keyframes babbar {
     0%{
@@ -37,7 +37,7 @@
 }
 
 
-/* @keyframes babbar {
+/* @keyframes babbar{
     from {
         width:212px;
     }
@@ -47,3 +47,22 @@
     }
     
 } */
+
+
+
+/* EXTRA */
+/* Certainly! Let's explore the different possibilities for each of the animation properties:
+
+  01)animation-direction: 
+normal: The animation plays forwards from the beginning to the end on each iteration. This is the default value.
+reverse: The animation plays backwards from the end to the beginning on each iteration.
+alternate: The animation plays forwards on odd iterations and backwards on even iterations, creating a ping-pong effect.
+alternate-reverse: Similar to alternate, but the animation starts backwards and alternates direction on subsequent iterations.
+
+
+02) animation-fill-mode: 
+none: No styles are applied to the element before or after the animation.
+forwards: The styles defined in the keyframe at the end of the animation (100% or to) are applied to the element after the animation ends.
+backwards: The styles defined in the keyframe at the start of the animation (0% or from) are applied to the element before the animation begins.
+both: Both the forwards and backwards behaviors are applied, meaning the element retains styles from both the start and end of the animation.
+ */
