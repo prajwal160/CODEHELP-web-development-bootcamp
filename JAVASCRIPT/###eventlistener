@@ -1,0 +1,58 @@
+ ### Event Listeners in JavaScript
+
+This code demonstrates the use of event listeners in JavaScript. Event listeners are functions that are executed when a specified event occurs. In this case, we are using event listeners to handle clicks on various elements of a web page.
+
+#### 1. Event Function
+
+The first part of the code defines an event function called `eventFunction`. This function simply logs a message to the console when it is executed.
+
+```javascript
+function eventFunction() {
+    console.log('I have clicked on the document');
+}
+```
+
+#### 2. Adding and Removing Event Listeners
+
+Next, we add an event listener to the document object. This means that the `eventFunction` will be executed whenever the user clicks anywhere on the document.
+
+```javascript
+document.addEventListener('click', eventFunction);
+```
+
+We can also remove event listeners using the `removeEventListener` method. For example, the following code would remove the event listener that we just added:
+
+```javascript
+document.removeEventListener('click', eventFunction);
+```
+
+#### 3. Event Object
+
+The event listener function receives an event object as its argument. This object contains information about the event that occurred. For example, the `target` property of the event object refers to the element that was clicked.
+
+```javascript
+document.addEventListener('click', function(event) {
+    console.log(event.target);
+});
+```
+
+#### 4. Event Bubbling
+
+Event bubbling is a concept in JavaScript where events propagate up the DOM tree. This means that if you click on a child element, the event will also be triggered on the parent element, and so on.
+
+For example, the following code adds an event listener to the `#wrapper` element. However, if you click on a child element of the `#wrapper` element, the event listener will still be executed.
+
+```javascript
+const content = document.querySelector('#wrapper');
+
+content.addEventListener('click', function(event) {
+    console.log(event.target);
+});
+```
+
+#### 5. Event Capturing
+
+Event capturing is the opposite of event bubbling. With event capturing, events are propagated down the DOM tree. This means that if you click on a child element, the event will be triggered on the parent element first, and then on the child element.
+
+To enable event capturing, you can use the third parameter of the `addEventListener` method. For
+

@@ -1,6 +1,6 @@
 
 :root{
-    /* --dark-red:#981a2c; */
+    --dark-red:#96981a;
 }
 
 .container{
@@ -15,6 +15,6 @@
 .box{
     border:2px solid green;
     background-color: aqua;
-    --dark-red:#981a2c;
-    color:var(--dark-red);
+    /* --dark-red:#981a2c; */
+    /* color:var(--dark-red);/ */
 }

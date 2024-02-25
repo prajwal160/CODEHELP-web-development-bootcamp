@@ -17,7 +17,7 @@
     animation-timing-function:  ease;
     /* animation-delay: 1s; */
 /* animation-direction: alternate;   different directions the animation moves*/
-    animation-fill-mode:both;
+    /* animation-fill-mode:backwards; */
 }    
 
 @keyframes babbar {
