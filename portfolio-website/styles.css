@@ -45,6 +45,19 @@
     font-size:28px;
 }
 
+.profile-container {
+  display: flex;
+  align-items: center;
+}
+
+.profile-image {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%; 
+  object-fit: cover;
+  margin-right: 8px;
+}
+
 .nav-items{
     display:flex;
     gap:2rem;
@@ -588,6 +601,11 @@ a{
 
 .caps{
   font-size:90px;
+}
+
+.caps2{
+  font-size:30px;
+  color: #4e45d5;
 }
 
 .skill-subHeading{
